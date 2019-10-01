@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "sourceType": "com.nevercaution.boot.autoconfigure.config.CustomLogProperties",
+      "name": "custom-log.name",
+      "type": "java.lang.String"
+    }
+  ]
+}
