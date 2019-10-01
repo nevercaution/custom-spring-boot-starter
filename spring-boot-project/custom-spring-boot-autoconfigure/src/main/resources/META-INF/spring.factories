@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.nevercaution.boot.autoconfigure.config.CustomLogConfiguration
+  com.nevercaution.boot.autoconfigure.config.log.CustomLogConfiguration, \
+  com.nevercaution.boot.autoconfigure.config.database.PageDataSourceConfiguration

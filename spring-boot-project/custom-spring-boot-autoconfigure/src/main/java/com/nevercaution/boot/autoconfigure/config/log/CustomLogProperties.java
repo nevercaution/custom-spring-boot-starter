@@ -1,4 +1,4 @@
-package com.nevercaution.boot.autoconfigure.config;
+package com.nevercaution.boot.autoconfigure.config.log;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

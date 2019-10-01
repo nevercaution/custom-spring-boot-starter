@@ -15,5 +15,6 @@
 
     <modules>
         <module>custom-spring-boot-starter-custom-log</module>
+        <module>custom-spring-boot-starter-page-database</module>
     </modules>
 </project>

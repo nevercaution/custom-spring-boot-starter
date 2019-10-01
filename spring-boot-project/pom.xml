@@ -19,7 +19,10 @@
         <!-- Starter module -->
         <module>custom-spring-boot-autoconfigure</module>
         <module>custom-spring-boot-starters</module>
+
+        <!-- custom modules -->
         <module>custom-logger</module>
+        <module>page-database</module>
 
         <!--  sample project -->
         <module>sample-web</module>

@@ -12,8 +12,6 @@
     <artifactId>custom-logger</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>custom-logger</name>
-<!--    <packaging>jar</packaging>-->
-
 
     <dependencies>
         <dependency>

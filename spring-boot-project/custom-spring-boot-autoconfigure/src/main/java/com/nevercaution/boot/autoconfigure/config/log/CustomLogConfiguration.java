@@ -1,4 +1,4 @@
-package com.nevercaution.boot.autoconfigure.config;
+package com.nevercaution.boot.autoconfigure.config.log;
 
 
 import com.nevercaution.modules.customlogger.CustomLogService;

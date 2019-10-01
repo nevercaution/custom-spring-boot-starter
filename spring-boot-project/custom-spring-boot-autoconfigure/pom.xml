@@ -21,6 +21,7 @@
     </properties>
 
     <dependencies>
+        <!-- Compile -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>
@@ -29,13 +30,31 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
+        <!-- Custom log -->
         <dependency>
             <groupId>com.nevercaution.modules</groupId>
             <artifactId>custom-logger</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <optional>true</optional>
         </dependency>
-
+        <!-- Database  -->
+        <dependency>
+            <groupId>com.nevercaution.modules</groupId>
+            <artifactId>page-database</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.17</version>
+            <optional>true</optional>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -1,9 +1,30 @@
 {
   "properties": [
     {
-      "sourceType": "com.nevercaution.boot.autoconfigure.config.CustomLogProperties",
+      "sourceType": "com.nevercaution.boot.autoconfigure.config.log.CustomLogProperties",
       "name": "custom-log.name",
-      "type": "java.lang.String"
+      "type": "java.lang.String",
+      "description": "custom log configuration"
+    },
+    {
+      "name": "custom.datasource.username",
+      "type": "java.lang.String",
+      "description": "for JPA configuration"
+    },
+    {
+      "name": "custom.datasource.password",
+      "type": "java.lang.String",
+      "description": "for JPA configuration"
+    },
+    {
+      "name": "custom.datasource.url",
+      "type": "java.lang.String",
+      "description": "for JPA configuration"
+    },
+    {
+      "name": "custom.datasource.hibernate-dialect",
+      "type": "java.lang.String",
+      "description": "for JPA configuration"
     }
   ]
 }
