@@ -27,7 +27,6 @@ public class SampleWebApplication implements ApplicationRunner {
     @Autowired
     private PageUserRepository pageUserRepository;
 
-
     @Autowired
     private ApplicationContext context;
 

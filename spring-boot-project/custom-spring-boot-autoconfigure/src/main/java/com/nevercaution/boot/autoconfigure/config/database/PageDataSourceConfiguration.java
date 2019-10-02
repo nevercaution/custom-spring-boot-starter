@@ -3,6 +3,7 @@ package com.nevercaution.boot.autoconfigure.config.database;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.hibernate.cfg.Environment;
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -13,6 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -24,17 +26,16 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
-@ComponentScan("com.nevercaution.modules.pagedatabase")
 @EnableJpaRepositories(basePackages = {
         // TODO: add repository package name in custom database modules
         "com.nevercaution.modules.pagedatabase.repository",
 })
-@ConditionalOnMissingBean(DataSource.class)
-@ConditionalOnClass({JpaRepository.class})
 @EnableConfigurationProperties(PageDataSourceProperties.class)
 @EnableTransactionManagement
+@EnableJpaAuditing
 @AutoConfigureBefore(DataSourceAutoConfiguration.class)
 @ConditionalOnProperty(prefix = "custom.datasource", name = {"username", "password", "url", "hibernateDialect"}, matchIfMissing = true)
+@ComponentScan(basePackages = {"com.nevercaution.modules.pagedatabase.service"})
 public class PageDataSourceConfiguration {
 
     private static final String[] ENTITY_PACKAGES = {

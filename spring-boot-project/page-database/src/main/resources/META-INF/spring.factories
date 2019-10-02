@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.nevercaution.modules.pagedatabase.config.JpaConfiguration

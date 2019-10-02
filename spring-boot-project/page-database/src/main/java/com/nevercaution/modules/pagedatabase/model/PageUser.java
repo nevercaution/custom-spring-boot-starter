@@ -49,10 +49,12 @@ public class PageUser extends BaseEntity {
     @Override
     public String toString() {
         return "PageUser{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", userStatus=" + userStatus +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", phone='" + getPhone() + '\'' +
+                ", userStatus=" + getUserStatus() +
+                ", createDt=" + getCreateDt() +
+                ", modifiedDt=" + getModifiedDt() +
                 '}';
     }
 }
