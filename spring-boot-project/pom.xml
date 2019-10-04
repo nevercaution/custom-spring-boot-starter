@@ -41,11 +41,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>my-local-repo</id>-->
-<!--            <url>file:///~/.m2/repository</url>-->
-<!--        </repository>-->
-<!--    </repositories>-->
 </project>

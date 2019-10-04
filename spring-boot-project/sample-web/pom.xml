@@ -8,10 +8,13 @@
         <version>2.1.8.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+
     <groupId>com.nevercaution</groupId>
     <artifactId>sample-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sample-web</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>

@@ -62,11 +62,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>my-local-repo</id>-->
-<!--            <url>file://${project.basedir}/target</url>-->
-<!--        </repository>-->
-<!--    </repositories>-->
 </project>
