@@ -28,7 +28,6 @@ $ mvn install
 [INFO] ------------------------------------------------------------------------
 ```
 
-=
 
 관련 문서는 [spring-boot-starter-custom](https://nevercaution.github.io/2019/10/02/spring-boot-starter-custom/) 에서 확인할 수 있다.
 
